@@ -259,187 +259,6 @@ footer a {
     margin-bottom: 80px;
     text-align: center;
 }
-/*Steps styling */
-.steps {
-    background: var(--primary-color);
-    padding: 40px 0;
-}
-.step h3 {
-    color: var(--secondary-color);
-    font-size: 46px;
-    flex: 1 30%;
-}
-.step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-}
-.step-img img {
-    max-width: 100%;
-}
-.step-text {
-    flex: 12;
-}
-.step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-}
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-}
-.step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    border-bottom: 1px solid var(--tertiary-color);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.step:last-child {
-    border-bottom: none;
-}
-/*food box */ 
-.food {
-    padding: 40px 0;
-}
-.trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.trainer {
-    margin: 20px;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    flex: 1;
-}
-.trainer-1 {
-    background-image: url(../images/trainer-1.jpg);
-}
-.trainer-2 {
-    background-image: url(../images/trainer-2.jpg);
-}
-.trainer-3 {
-    background-image: url(../images/trainer-3.jpg);
-}
-.trainer-img {
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
-    background-size: cover;
-    background-position: end;
-    position: relative;
-    overflow: hidden;
-}
-.trainer-img::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: rgba(78, 147, 83, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgba(13, 113, 41, 0.3), rgba(127, 182, 156, 0.5) ); 
-    opacity: 0;
-    transition: 0.5s;
-}
-.trainer:hover .trainer-img::after {
-    opacity: 1;
-}
-.trainer-img h3 {
-    position: relative;
-    z-index: 100;
-    font-size: 22px;
-    margin-bottom: 5px;
-    top: 200px;
-}
-.trainer-img h4 {
-    position: relative;
-    z-index: 100;
-    font-size: 16px;
-    top: 200px;
-}
-.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
-    top: 0px;
-    transition: 0.6s
-}
-.trainer-bio {
-    padding: 25px;   
-    line-height: 1.3;
-}
-.trainer-bio h3 {
-    font-size: 28px;
-    display: none;
-}
-.trainer-bio h4 {
-    font-weight: lighter;
-    font-size:22px;
-    margin-bottom: 15px;
-    display: none;
-}
-.trainer-bio p {
-    font-size: 16px;
-}
-/*Service Style*/
-.services {
-    background:var(--primary-color);
-    padding: 40px 0;
-}
-
-.service-grid-wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-/*Service plan with grid section */
-.service-grid-container {
-    background: var(--primary-color);
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 4fr);
-    grid-template-rows: repeat(5, 1fr) 2fr;
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-}
-
-.service-grid-item {
-    padding: 15px 0;
-    border: 2px solid var(--secondary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.service-grid-item.basic {
-    grid-column: 2 / span 1;
-}
-.service-grid-item.both {
-    grid-column: 2 / span 2;
-}
-.service-grid-item.cancel {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    grid-row: 1 / -1
-}
-.grid-head, .grid-price, .service-grid-item.cancel {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 /* Reach out section */
 .contact {
     background: var(--secondary-color);
@@ -502,14 +321,70 @@ footer a {
     font-size: 16px;
     border-radius: 10px;
 }
-.contact-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
-}
 
-.flex-row {
-    display: flex;
-}
+<div id="SimpleCarouselExample" class="carousel slide" data-ride="carousel">
+
+
+<div class="carousel-inner">
+
+
+<div class="carousel-item active">
+
+
+<img src="..." class="d-block w-100" alt="...">
+
+
+</div>
+
+
+<div class="carousel-item">
+
+
+<img src="..." class="d-block w-100" alt="...">
+
+
+</div>
+
+
+<div class="carousel-item">
+
+
+<img src="..." class="d-block w-100" alt="...">
+
+
+</div>
+
+
+</div>
+
+
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+
+<span class="sr-only">Previous</span>
+
+
+</a>
+
+
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+
+<span class="sr-only">Next</span>
+
+
+</a>
+
+
+</div>
+
+
 
 /* Media query for smaller screens */
 @media screen and (max-width: 980px) {
@@ -560,87 +435,3 @@ footer a {
     }
 }
 
-/*Media query for tablets */
-@media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .trainer-img::after, .trainer-img h3, .trainer-img h4 {
-        display: none;
-    }
-
-    .trainer-bio h3, .trainer-bio h4 {
-        display: block;
-    }
-
-    .step-text {
-        flex: 100%;
-    }
-
-    .service-grid-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    .service-grid-item.basic {
-        grid-column: 1
-    }
-    .service-grid-item.both {
-        grid-column: 1 / -1;
-    }
-    .service-grid-item.cancel {
-        grid-column: 1 / -1;
-        grid-row: -1;
-        writing-mode: unset;
-        transform: none
-    }
-
-}
-
-/* Media query for phones */
-@media screen and (max-width: 575px) {
-    .hero-form button {
-        width: 100%;
-    }
-
-    .section-title {
-        width: 95%;
-    }
-
-    .intro p {
-        width: 100%
-    }
-
-    .trainer {
-        flex: 0 100%;
-    }
-
-    .contact-info {
-        text-align: center;
-    }
-
-    .contact-info > * {
-        flex: 0 100%;
-    }
-
-    .contact-form {
-        order: 3;
-    }
-}
