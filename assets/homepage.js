@@ -23,21 +23,6 @@ var formSubmitHandler = function(event) {
 
     console.log(event);
 };
-
-var getRecipes = function(ingredient) {
-    let apiUrl = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=30&q=" + ingredient;
-    fetch(apiUrl, options)
-    .then(function(response) {
-        response.json()
-        .then(function(data) {
-            displayRecipes(data, ingredient);
-        }).catch(function(error) {
-            console.log(error);
-        })
-
-    });
-};
-
 var displayRecipes = function(recipes, searchTerm) {
     console.log(recipes);
     console.log(searchTerm);
@@ -57,6 +42,22 @@ var displayRecipes = function(recipes, searchTerm) {
     }
 
 };
+
+var getRecipes = function(ingredient) {
+    let apiUrl = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=30&q=" + ingredient;
+    fetch(apiUrl, options)
+    .then(function(response) {
+        response.json()
+        .then(function(data) {
+            displayRecipes(data, ingredient);
+        }).catch(function(error) {
+            console.log(error);
+        })
+
+    });
+};
+
+
 
 recipeFormEl.addEventListener("submit", formSubmitHandler);
 /*     fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=30&tags=vegetarian', options)  
