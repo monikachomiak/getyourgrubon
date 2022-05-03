@@ -37,19 +37,28 @@
  </ul> 
 </nav>
 </header>
+
+
+<!-- This is the beginning of the recipe search area -->
 <main class = "flex-row justify-space-between">
-    <div class ="col-12 md-4"></div>
+    <div class ="col-12 md-4">
 
     <div class="card">
-    <h3 class="card-header">Search By Ingredient</h3>
-    <form id="meal-form" class="card-body">
+    <h3 class="card-header">Search By Main Ingredient</h3>
+    <form id="recipe-form" class="card-body">
         <label class="form-label" for="ingredient">Main Ingredient</label>
         <input name = "ingredient" id="ingredient" type="text" autofocus="true" class="form-input"/>
         <button type="submit" class="btn">Get Recipes</button>
     </form>
+    </div>
+
+
     <div class="card-body" id="meal-buttons">
 
-    <div class="col-12 md-8"></div>
+    <div class="col-12 md-8">
+        <h2 class="subtitle">Recipes containing <span id="ingredient-search-term"></span></h2>
+        <div id="recipes-container" class="list-group"></div>
+    </div>
 
 
 
