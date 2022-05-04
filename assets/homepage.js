@@ -5,13 +5,48 @@ const options = {
 		'X-RapidAPI-Key': '0dc28fbcb9mshb78abb346d445efp1333a3jsn79268baadc63'
 	}
 };
+var recipesContainerEl = document.querySelector("#recipes-container");
+var ingredientSearchTerm = document.querySelector("#ingredient-search-term");
 var recipeFormEl = document.querySelector("#recipe-form");
 var ingredientInputEl = document.querySelector("#ingredient");
+
+
+
+var getRecipes = function(ingredient) {
+    let apiUrl = "https://tasty.p.rapidapi.com/recipes/list?from=0&size=5&q=" + ingredient;
+    var response = fetch(apiUrl, options);
+    fetch(apiUrl, options).then(function(response) {
+        response.json().then(function(data) {
+            console.log(data);
+        });
+    });
+};
+
+var formSubmitHandler = function(event) {
+    event.preventDefault();
+    console.log(event);
+};
+
+recipeFormEl.addEventListener("submit", formSubmitHandler);
+    var recipe = ingredientInputEl.value.trim();
+        if (recipe) {
+            getRecipes(recipe);
+            ingredientInputEl.value = "";
+        } else {
+            alert("Please enter a main ingredient.");
+        }
+
+
+/*
+var recipeFormEl = document.querySelector("recipe-form");
+var ingredientInputEl = document.querySelector("#ingredient");          
 var recipesContainerEl = document.querySelector("#recipes-container");
 var ingredientSearchTerm = document.querySelector("#ingredient-search-term");
 
 var formSubmitHandler = function(event) {
     event.preventDefault();
+
+
     var ingredient = ingredientInputEl.value.trim();
         if (ingredient) {
             console.log(ingredient);

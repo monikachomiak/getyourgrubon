@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Your Grub On</title
+    <title>Get Your Grub On</title>
     <link href="./assets/style.css" rel="stylesheet">
 </head>
 <body>
@@ -59,14 +59,18 @@
 
 
 <!-- "search recipes" section"-->
-<section id="search-recipes">
-<h2>Search Recipes</h2>
-<!--form element-->
-<form>
-    <label for="recipe">Enter the recipe you're looking for</label>
-    <input type="text" placeholder="GRUB"/>
-    <button type="submit">Search Recipes!</button>
-</form>
+<main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4"></div>
+    <div class="card">
+        <h3>Search By Main Ingredient</h3>
+        <form id="recipe-form">
+          <input name="ingredient" id="ingredient" type="text" autofocus="true"/>
+          <button type="submit">Get Recipes!</button>
+        </form>
+      </div>
+  
+    <div class="col-12 col-md-8"></div>
+  </main>
 
 <!-- Main div to render the search results for recipes -->
 <div id="search-results">
@@ -76,18 +80,12 @@
 </div>
 
 <!--  Inside main div have one to hold the recipe list. Give each div a class ID -->
-<div>
-    <ul>
-        <li>Recipe List will go here</li>
-        <li>and here</li>
-        <li>and here</li>
-        <li>and here</li>
-        <li>this is a visual mock up</li>
-        <li>the recipe list of 6 should sit to the right of the image on the same row</li>
-    </ul>
-</div>
 
-</div>
+
+
+
+
+
 </section>
 
 
@@ -119,6 +117,6 @@
 
 </footer>
 
-
+<script src="./assets/homepage.js"></script>
 </body>
 </html>
