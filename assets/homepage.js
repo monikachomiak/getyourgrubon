@@ -28,9 +28,9 @@ var formSubmitHandler = function(event) {
 };
 
 recipeFormEl.addEventListener("submit", formSubmitHandler);
-    var recipe = ingredientInputEl.value.trim();
-        if (recipe) {
-            getRecipes(recipe);
+    var ingredient = ingredientInputEl.value.trim();
+        if (ingredient) {
+            getRecipes(ingredient);
             ingredientInputEl.value = "";
         } else {
             alert("Please enter a main ingredient.");
