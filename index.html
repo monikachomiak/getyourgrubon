@@ -70,19 +70,45 @@
 <br>
 
 <!-- "search recipes" section"-->
-<section id="search-recipes">
+
+<main class="recipe-search-form">
+    <div class="search-area"></div>
+        <div class="search-container">
+            <h3 class="search-container-header">Search By Ingredient</h3>
+                <form id="recipe-search-form">
+                <input name="ingredient" id="ingredient" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn">Get Recipes!</button>
+                </form>
+            </div>
+
+    <div class="display-results-area">
+        <h2 class="subtitle">Showing recipes for: <span id="ingredient-search-term"></span></h2>
+        <div id="recipes-container" class="recipes-list"></div>
+    </div>
+</main>
+
+
+
+
+
+<!-- <section id="search-recipes"> 
 <h2>Search Recipes</h2>
 <!--form element-->
-<form>
+
+<!-- <form id="recipe-form"> 
     <label for="recipe">Enter the recipe you're looking for</label>
-    <input type="text" placeholder="GRUB"/>
+    <input id= "type="text" placeholder="GRUB"/>
     <button type="submit">Search Recipes!</button>
-</form>
+</form> -->
 
 <!-- Main div to render the search results for recipes -->
-<div id="search-results">
+<!-- <div id="search-results">
 
+feature/recipe-form
+<!-- Insider main div, have one div to hold the image--> 
+=======
 <!-- Insider main div, have one div to hold the image-->
+develop
 
 
 <!--  Inside main div have one to hold the recipe list. Give each div a class ID -->
@@ -121,6 +147,6 @@ height="500">
 
 </footer>
 
-
+<script src="./assets/homepage.js"></script>
 </body>
 </html>
