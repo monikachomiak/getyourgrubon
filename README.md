@@ -10,7 +10,7 @@ When a user views the page, they will be able to search a recipe by typing it in
 # Deploy Link
 https://monikachomiak.github.io/getyourgrubon/
 # Screenshot
-<img src= "./images/screencapproject">
+![image](https://user-images.githubusercontent.com/101068069/167341988-681ea9d6-8258-42ec-8a3d-b02dab598271.png)
 # License
 MIT License
 Copyright (c) [2022] [monikachomiak, Liz Washington, Ron Hare]
