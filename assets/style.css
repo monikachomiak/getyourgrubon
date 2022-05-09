@@ -157,9 +157,6 @@ footer a {
     margin: 0 auto;
     margin-bottom: 80px;
     text-align: center;
-
-   
-
 }
 
 
@@ -167,11 +164,7 @@ footer a {
 
 
 /* Media query for smaller screens */
-@media (max-device-width: 600px) {
-    .mobile-text {
-      text-align: center; 
-      
-      
+@media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -179,13 +172,13 @@ footer a {
     }
 
     header h1 {
-        width: 75%;
+        width: 100%;
         text-align: center;
     }
 
     header nav ul {
         margin-top: 20px;
-        width: 50%;
+        width: 100%;
         justify-content: center;
     }
 
@@ -215,6 +208,6 @@ footer a {
     }
 
     .contact-info iframe {
-        flex:100%;
+        flex: 1 100%;
     }
 }
