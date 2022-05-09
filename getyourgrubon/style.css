@@ -157,14 +157,30 @@ footer a {
     margin: 0 auto;
     margin-bottom: 80px;
     text-align: center;
+
+
+   
+
+}
+.contact {
+    width: 90;
+    text-align: center;
+    margin: 3.5%;
+    color: rgb(83, 152, 23);
+    font-size: 18px;
+    line-height: 1.2;
+
 }
 
 
 
 
-
 /* Media query for smaller screens */
-@media screen and (max-width: 980px) {
+@media (max-device-width: 600px) {
+    .mobile-text {
+      text-align: center; 
+      
+      
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -172,13 +188,13 @@ footer a {
     }
 
     header h1 {
-        width: 100%;
+        width: 75%;
         text-align: center;
     }
 
     header nav ul {
         margin-top: 20px;
-        width: 100%;
+        width: 50%;
         justify-content: center;
     }
 
@@ -208,6 +224,6 @@ footer a {
     }
 
     .contact-info iframe {
-        flex: 1 100%;
+        flex:100%;
     }
-}
+
